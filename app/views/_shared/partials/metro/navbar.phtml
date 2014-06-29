@@ -9,6 +9,13 @@
             <li><a href="#">Templates</a></li>
         </ul>
         <!-- Con registro de session -->
+        <?php if(!Auth::is_valid()): ?>
+
+        <span class="element-divider place-right"></span>
+        <div class="element place-right">
+            <?php print Html::link("login", "Login  <span class='icon-locked-2'></span>") ?>
+        </div>
+        <?php else: ?>
         <span class="element-divider place-right"></span>
         <div class="element place-right">
             <a class="dropdown-toggle" href="#"><span class="icon-cog"></span></a>
@@ -20,6 +27,8 @@
             </ul>
         </div>
         <button class="element image-button image-left place-right">Sergey Pimenov <img src="images/me.jpg"></button>
+        <?php endif?>
+
         </div>
     </div>
 </div>

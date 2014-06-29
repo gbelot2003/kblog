@@ -1,0 +1,22 @@
+<?php View::content() ?>
+<?php if(!Auth::is_valid()): ?>
+	<div class="span8 offset4">
+		<?php Print Form::open() ?>
+		<frameset class="bg-darkPink">
+			<legend>Login de Sistema</legend>
+			<label>Usuario</label>
+				<div class="input-control text" data-role="input-control">
+                    <input type="text" placeholder="type text">
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                 </div>
+			<label>Pasword</label>
+			<div class="input-control password" data-role="input-control">
+                <input type="password" placeholder="type password" autofocus="">
+                <button class="btn-reveal" tabindex="-1" type="button"></button>
+            </div>
+
+            <input type="submit" value="Submit">
+		</frameset>
+		<?php Print Form::close() ?>
+	</div>
+<?php endif ?>

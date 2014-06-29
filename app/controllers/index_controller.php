@@ -27,7 +27,7 @@ class IndexController extends AppController
     	}
     }
 
-    public function image(){
-
+    public function login(){
+    	
     }
 }
