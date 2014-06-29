@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="product" content="Metro UI CSS Framework">
+    <meta name="description" content="Simple responsive css framework">
+    <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+    <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+    
+    <title>KumbiaPHP web &amp; App Framework</title>
+    
+    <?php Tag::css('metro-bootstrap') ?>
+    <?php Tag::css('metro-bootstrap-responsive') ?>
+    <?php Tag::css('prettify') ?>
+    <?php Tag::css('iconFont') ?>
+    <?php echo Html::includeCss() ?>
+
+
+    <?php print Tag::js("metrojquery/jquery.min") ?>
+    <?php print Tag::js("metrojquery/jquery.widget.min") ?>
+    <?php print Tag::js("metrojquery/jquery.mousewheel") ?>
+    <?php print Tag::js("prettify/prettify") ?>
+    <?php print Tag::js("metro/metro-loader") ?>
+    <?php print Tag::js("metro/metro-dropdown") ?>
+
+</head>
+<body class="metro ">
+  <?php View::partial('metro/navbar') ?>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <?php View::content(); ?>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
