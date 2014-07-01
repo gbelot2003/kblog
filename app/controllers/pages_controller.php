@@ -41,4 +41,9 @@ class PagesController extends AppController
 	{
 		View::select(implode('/', $this->parameters));
 	}
+
+	public function logs()
+	{
+		
+	}
 }

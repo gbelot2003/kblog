@@ -14,7 +14,6 @@ class IndexController extends AppController
 
     public function login()
     {	
-    	
 		if(Input::hasPost("user", "password")):
 			$user = Input::Post('user');
 			$pass = Input::Post('password');

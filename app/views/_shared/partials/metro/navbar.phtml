@@ -21,11 +21,12 @@
         <div class="element place-right">
             <a class="dropdown-toggle" href="#"><span class="icon-cog"></span></a>
             <ul class="dropdown-menu place-right" data-role="dropdown" style="display: none;">
-                <li><a href="#">Dashboard</a></li>
-                <li><?php print Html::link("logout", "logout") ?></li>
+                <li><?php print Html::link("users", "Usuarios") ?></li>
+                <li><?php print Html::link("logs", "Logs de Sistema") ?></li>
+                <li><?php print Html::link("logout", "Logout") ?></li>
             </ul>
         </div>
-        <button class="element image-button image-left place-right"><?php print $user ?> <img src="images/me.jpg"></button>
+        <button class="element image-button image-left place-right"><a href=""><?php print $user ?><img src="images/me.jpg"></a></button>
         <?php endif?>
 
         </div>
