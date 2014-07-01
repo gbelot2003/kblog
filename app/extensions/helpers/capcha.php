@@ -1,11 +1,24 @@
 <?php
+
+/**
+*  por: Gerardo Belot
+**/
+
+/**
+**
+** Simplemente implementamos este el controlador deseado, la variable con el seguro de captcha se guarda
+** en variables de sesion, solo las comparamos con un if(session::get("rand"))
+** Para visualizar solo agregamos  <?php print Html::img("simpletext.jpg"); ?>
+**
+**/
+
 class capcha {
 
     public static function create_image() 
     { 
         $md5_hash = md5(rand(0,999)); 
-        //We don't need a 32 character long string so we trim it down to 5 
-        $security_code = substr($md5_hash, 15, 5); 
+        //We don't need a 32 character long string so we trim it down to 6
+        $security_code = substr($md5_hash, 15, 6); 
         //Set the session to store the security code
         Session::set("rand", $security_code);
         //Set the image width and height 

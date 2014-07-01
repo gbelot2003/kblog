@@ -11,7 +11,6 @@ class IndexController extends AppController
     {
     	$this->rand =  rand(1,60);
         Capcha::create_image();
-        Session::get('rand');
         unset($this->rand);
     }
 
@@ -28,6 +27,7 @@ class IndexController extends AppController
     }
 
     public function login(){
-    	
+
+    	$this->ai = $_POST;
     }
 }
