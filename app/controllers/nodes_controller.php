@@ -5,14 +5,9 @@
  * 
  */
 
-class IndexController extends AppController
+class NodesController extends AppController
 {
     public function index()
-    {
-
-    }
-
-    public function login()
     {
 
     }
