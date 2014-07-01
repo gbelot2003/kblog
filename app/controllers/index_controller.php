@@ -21,7 +21,6 @@ class IndexController extends AppController
 			$pws  = sha1($pass);
 			$auth = new Auth("model", "class: users", "user: $user", "password: $pws");
 			if($auth->authenticate()):
-				Flash::valid("<strong>Bienvenido $user</strong>");
 				Router::redirect("/");
 			else:
 				Flash::valid("<strong>Atención, La información de usuario no coinside !!</strong>");
