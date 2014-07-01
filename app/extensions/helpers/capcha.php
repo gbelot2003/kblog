@@ -14,6 +14,21 @@
 **
 **/
 
+/*
+
+<div class="span12">
+    <hr />
+    <?php print Form::open("test") ?>
+        <hr />
+        <p> valor </p>
+        <p><?php Print Form::text("rands"); ?>
+        <p><?php print Form::submit('enviar') ?>
+    <?php print Form::close() ?>
+    <?php print Html::img("simpletext.jpg"); ?>
+</div>    
+*/
+
+
 class capcha {
 
     public static function create_image() 
