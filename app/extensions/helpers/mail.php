@@ -12,7 +12,7 @@ class Mail {
 		$obj->Port = 26; // Puerto del SMTP
 		$obj->Username = ""; // Cuenta de usuario del SMTP  ... de aqui sale el correo
 		$obj->Password = ""; // Clave del usuario SMTP 
-		$obj->AddAddress("gerardobelot@outlook.com", "Correo desde Webmasterhn");
+		$obj->AddAddress("gerardobelot@dominio.com", "Correo desde Webmasterhn");
 		$obj->SetFrom("", "");
 		$obj->Subject = "Mensaje desde Sitioweb";
 		$body = $title."<br/>";
