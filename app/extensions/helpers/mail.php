@@ -8,7 +8,7 @@ class Mail {
 		$obj = new PHPMailer();
 		$obj->IsSMTP();
 		$obj->SMTPAuth = true; // Habilitamos la autenticación SMTP - 
-		$obj->Host = "mail.webmasterhn.com"; // Nombre del servidor SMTP 
+		$obj->Host = "mail.dominio.com"; // Nombre del servidor SMTP 
 		$obj->Port = 26; // Puerto del SMTP
 		$obj->Username = ""; // Cuenta de usuario del SMTP  ... de aqui sale el correo
 		$obj->Password = ""; // Clave del usuario SMTP 
